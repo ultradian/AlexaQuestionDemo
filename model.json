@@ -1,0 +1,73 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "a and c",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AnswerQuestion",
+          "slots": [
+            {
+              "name": "question",
+              "type": "Question"
+            }
+          ],
+          "samples": [
+            "What is {question}",
+            "Who is {question}",
+            "Tell me {question}",
+            "What is the {question}",
+            "who is the {question}",
+            "tell me the {question}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "onFirst",
+              "name": {
+                "value": "on first",
+                "synonyms": [
+                  "the fellow playing first",
+                  "the name of the fellow on first",
+                  "playing first",
+                  "on first base"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "on third"
+              }
+            },
+            {
+              "id": "onSecond",
+              "name": {
+                "value": "on second",
+                "synonyms": [
+                  "on second base",
+                  "playing second",
+                  "the fellow playing second"
+                ]
+              }
+            }
+          ],
+          "name": "Question"
+        }
+      ]
+    }
+  }
+}
